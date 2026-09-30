@@ -23,7 +23,7 @@ def configMap = [
 ]
 
 if ( ! env.BRANCH_NAME.equalsIgnoreCase("main") ){
-    nginxEKSPipeline(configMap)
+    nodejsEKSPipeline(configMap)
 }
 else {
     echo "need permision"
